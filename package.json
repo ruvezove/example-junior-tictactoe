@@ -1,0 +1,23 @@
+{
+  "name": "example-junior-tictactoe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "npx tsc && node dist/server.js"
+  },
+  "keywords": [
+    "tictactoe"
+  ],
+  "author": "Ruve Zove",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.5.1",
+    "typescript": "^5.9.2"
+  }
+}

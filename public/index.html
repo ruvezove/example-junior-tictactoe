@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Крестики нолики</title>
+
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <span id="background"></span>
+    
+    <div class="vgrid">
+        <div class="header">
+            <div class="x">X</div>
+            <div class="winners">0  0</div>
+            <div class="o">O</div>
+        </div>
+
+        <div class="grid">
+            <div class="grid-column">
+                <div class="box" id="00"></div>
+                <div class="box" id="01"></div>
+                <div class="box" id="02"></div>
+            </div>
+        
+            <div class="grid-column">
+                <div class="box" id="10"></div>
+                <div class="box" id="11"></div>
+                <div class="box" id="12"></div>
+            </div>
+        
+            <div class="grid-column">
+                <div class="box" id="20"></div>
+                <div class="box" id="21"></div>
+                <div class="box" id="22"></div>
+            </div>
+        </div>
+
+        <p class="title"></p>
+    </div>
+
+    <script src="./index.js" defer></script>
+</body>
+</html>

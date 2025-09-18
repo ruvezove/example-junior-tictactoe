@@ -1,0 +1,91 @@
+@font-face {
+    font-family: SCPB;
+    src: local('Source Code Pro'),
+        url('/fonts/Source Code Pro Bold.ttf') format('TrueType');
+}
+
+* {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: SCPB;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    -webkit-user-select: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+#background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: linear-gradient(35deg, #050505, #111, #000);
+}
+
+.vgrid {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    height: 100%;
+    align-content: center;
+}
+
+.grid {
+    border: 2px solid #fff4;
+    padding: 4vh;
+    border-radius: 4vh;
+    display: flex;
+    gap: 2vh;
+    transition: ease .7s border-color, 
+        ease .5s padding;
+}
+
+.grid:hover {
+    border-color: #fff1;
+    padding: 3vh;
+}
+
+.grid-column {
+    display: flex;
+    gap: 2vh;
+    flex-direction: column;
+}
+
+.box {
+    width: 10vh;
+    height: 10vh;
+    border-radius: 3vh;
+    border: 2px solid #fff2;
+    cursor: pointer;
+    text-align: center;
+    line-height: calc(10vh - 8px);
+    font-size: 7vh;
+    transition: ease .5s border-color, ease .3s transform;
+}
+
+.box:hover {
+    border-color: #fff5;
+    transform: scale(0.9);
+}
+
+.header {
+    display: flex;
+    width: calc(100% - 8vh);
+    padding: 4vh;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 48px;
+}
+
+.title {
+    text-align: center;
+    position: absolute;
+    font-size: 32px;
+    color: #fff;
+    opacity: 0;
+    margin-top: 2vh;
+    transition: .075s ease opacity;
+}
