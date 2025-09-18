@@ -1,14 +1,16 @@
 {
   "name": "example-junior-tictactoe",
   "version": "1.0.0",
-  "description": "",
+  "description": "Простой пример игры TicTacToe на Html, Css, Js запускаемой в среде NodeJs используя Express. ",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "start": "npx tsc && node dist/server.js"
   },
   "keywords": [
-    "tictactoe"
+    "tictactoe",
+    "example",
+    "junior"
   ],
   "author": "Ruve Zove",
   "license": "UNLICENSED",
